@@ -1,3 +1,5 @@
+snippet-*.ly
+paper.tex
 *.aux
 *.log
 *.pdf

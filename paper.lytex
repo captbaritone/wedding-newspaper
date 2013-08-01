@@ -1,0 +1,98 @@
+\documentclass{article}
+
+
+\usepackage{newspaper}
+\date{September 14, 2013}
+\currentvolume{1}
+\currentissue{1}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{verse}
+\usepackage[small,unboxed]{cwpuzzle}
+\usepackage[nonumber]{cuisine}
+\RecipeWidths{3.4in}{.20cm}{3cm}{2.50cm}{.85cm}{1.85cm}
+
+\usepackage{picinpar}
+%uasage of picinpar:
+%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+
+%%%%%%%%%  Front matter   %%%%%%%%%%
+
+\SetPaperName{Jorels:ea Journal}
+\SetHeaderName{Jorelsea Journal}
+\SetPaperLocation{San Francisco}
+\SetPaperSlogan{Special wedding issue!}
+\currentvolume{1}
+\currentissue{1}
+\SetPaperPrice{75 CENTS}
+
+\usepackage{graphics}
+\begin{document}
+\maketitle
+
+\begin{multicols}{3}
+    \input{includes/lisa_eldredge_comuter.tex}
+    \closearticle
+    \input{includes/grace_hollow_disney_land.tex}
+
+    %\closearticle
+ 
+
+    \columnbreak
+    \input{includes/lisa_eldredge_jumble.tex}
+\end{multicols}
+\pagebreak
+
+\begin{multicols}{2}
+    \input{includes/patty_hollow_tea_leaves.tex}
+    \closearticle
+    \input{includes/jordan_eldredge_die_rose.tex}
+    \columnbreak
+    \input{includes/alex_kelly_reading.tex}
+    \columnbreak
+    \byline{\Large ``Our Love Will Last as Long''}{Jordan Eldredge}
+    On July 3\textsuperscript{rd} 2009, I was at Donut World drinking a coffee,
+    eating a buttermilk-bar and missing Chelsea when this little love song
+    popped into my head. I quickly scrawled it on the back of a piece of paper
+    I found in my pocket. When I got home I multi-tracked it in a four-part
+    doo-wop arrangement. I have written out the melody here for you to sing:
+    \bigskip
+
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
+    \closearticle
+
+    \byline{\Large Canon no. 168}{Chelsea Hollow}
+    Eight voice canon by Henery Montan Berton (1767-1844).
+    \bigskip
+
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/chelsea_hollow_canon_168.ly}
+    \pagebreak
+
+    \input{includes/patty_hollow_senior_photograph.tex}
+    \closearticle
+    \input{includes/lisa_eldredge_band_uniform.tex}
+    \closearticle
+    \input{includes/jenna_hollow_valentine.tex}
+    \closearticle
+    \input{includes/andree_young_photographs.tex}
+
+    \pagebreak
+    % Crossword puzzle
+    \input{includes/crossword_puzzle.tex}
+    \closearticle
+    \input{includes/lisa_eldredge_birth_announcement.tex}
+    \columnbreak
+    \begin{multicols}{2}
+        \input{includes/crossword_clues.tex}
+    \end{multicols}
+\end{multicols}
+\pagebreak
+
+
+
+\begin{multicols}{2}
+    \input{includes/heather_watson_recipe.tex}
+\end{multicols}
+\end{document}
