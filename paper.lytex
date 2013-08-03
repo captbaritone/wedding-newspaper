@@ -1,22 +1,34 @@
 \documentclass{article}
 
-
 \usepackage{newspaper}
 \date{September 14, 2013}
 \currentvolume{1}
 \currentissue{1}
+
 \usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{verse}
+\usepackage{graphics}
 \usepackage[small,unboxed]{cwpuzzle}
 \usepackage[nonumber]{cuisine}
-\RecipeWidths{3.4in}{.20cm}{3cm}{2.50cm}{.85cm}{1.85cm}
+\RecipeWidths{\textwidth}{.20cm}{3cm}{4.50cm}{.85cm}{1.85cm}
+%\RecipeWidths{3.4in}{.20cm}{3cm}{2.50cm}{.85cm}{1.85cm}
 
 \usepackage{picinpar}
-%uasage of picinpar:
-%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+
+% Macro for signed quotes
+% http://tex.stackexchange.com/questions/13756/quote-environment-with-reference-at-the-end-right
+\def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
+  \hbox{}\nobreak\hfil(#1)%
+  \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+\newsavebox\mybox
+\newenvironment{aquote}[1]
+  {\savebox\mybox{#1}\begin{quote}}
+  {\signed{\usebox\mybox}\end{quote}}
+
 
 %%%%%%%%%  Front matter   %%%%%%%%%%
 
@@ -28,7 +40,6 @@
 \currentissue{1}
 \SetPaperPrice{75 CENTS}
 
-\usepackage{graphics}
 \begin{document}
 \maketitle
 
@@ -50,24 +61,18 @@
     \closearticle
     \input{includes/jordan_eldredge_die_rose.tex}
     \columnbreak
-    \input{includes/alex_kelly_reading.tex}
-    \columnbreak
-    \byline{\Large ``Our Love Will Last as Long''}{Jordan Eldredge}
-    On July 3\textsuperscript{rd} 2009, I was at Donut World drinking a coffee,
-    eating a buttermilk-bar and missing Chelsea when this little love song
-    popped into my head. I quickly scrawled it on the back of a piece of paper
-    I found in my pocket. When I got home I multi-tracked it in a four-part
-    doo-wop arrangement. I have written out the melody here for you to sing:
-    \bigskip
-
-    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
+    \input{includes/annette_watson_to_bodies.tex}
     \closearticle
 
-    \byline{\Large Canon no. 168}{Chelsea Hollow}
-    Eight voice canon by Henery Montan Berton (1767-1844).
-    \bigskip
+    \input{includes/jordan_eldredge_our_love.tex}
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
 
+    \input{includes/chelsea_hollow_canon_168.tex}
     \lilypondfile[line-width=3.4in,staffsize=15]{includes/chelsea_hollow_canon_168.ly}
+    \columnbreak
+    \input{includes/quotes.tex}
+    \closearticle
+    \input{includes/alex_kelly_reading.tex}
     \pagebreak
 
     \input{includes/patty_hollow_senior_photograph.tex}
@@ -92,7 +97,11 @@
 
 
 
-\begin{multicols}{2}
+%\begin{multicols}{2}
     \input{includes/heather_watson_recipe.tex}
-\end{multicols}
+    \input{includes/jorelsea_tikka_masala.tex}
+%\end{multicols}
+
+\input{includes/chelsea_hollow_editors_note.tex}
+
 \end{document}
