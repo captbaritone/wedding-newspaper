@@ -220,7 +220,7 @@ leadMusic = \relative c'' {
   \times 2/3 { bes8 c bes }
   \times 2/3 { a bes a }
   \times 2/3 { g a g }
-  \times 2/3 { f g g }
+  \times 2/3 { f g f }
   e4^"molto rit." c' c,2\fermata |
   \bar ":|"
 
@@ -237,7 +237,7 @@ leadWords =\lyricmode {
 
 \score {
   \new ChoirStaff <<
-    \chords { f1 | s | s | c:7| s | s | s | f | bes | bes:m | f | s | c:7 | s }
+    \chords { f1 | s | s | c:7| s | s | s | f | bes | bes:m | f4 c:7 f c:7 | f1:7 | c:7 | s }
     \new Staff = leadStaff <<
       \clef "G"
       \new Voice =

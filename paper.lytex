@@ -61,14 +61,19 @@
     \closearticle
     \input{includes/jordan_eldredge_die_rose.tex}
     \columnbreak
+    \input{includes/susan_bono_fidelity.tex}
     \input{includes/annette_watson_to_bodies.tex}
     \closearticle
 
-    \input{includes/jordan_eldredge_our_love.tex}
-    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
 
     \input{includes/chelsea_hollow_canon_168.tex}
     \lilypondfile[line-width=3.4in,staffsize=15]{includes/chelsea_hollow_canon_168.ly}
+    \columnbreak
+    \input{includes/jordan_eldredge_our_love.tex}
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
+    \closearticle
+    \input{includes/jordan_eldredge_nammies.tex}
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_nammies.ly}
     \columnbreak
     \input{includes/quotes.tex}
     \closearticle
@@ -97,10 +102,10 @@
 
 
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
     \input{includes/heather_watson_recipe.tex}
     \input{includes/jorelsea_tikka_masala.tex}
-%\end{multicols}
+\end{multicols}
 
 \input{includes/chelsea_hollow_editors_note.tex}
 
