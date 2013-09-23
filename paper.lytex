@@ -9,12 +9,17 @@
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{dialogue}
+\usepackage{graphicx}
 \usepackage{verse}
 \usepackage{graphics}
+\usepackage{alltt}
+\usepackage{setspace}
+\usepackage{comment}
 \usepackage[small,unboxed]{cwpuzzle}
 \usepackage[nonumber]{cuisine}
-\RecipeWidths{\textwidth}{.20cm}{3cm}{4.50cm}{.85cm}{1.85cm}
-%\RecipeWidths{3.4in}{.20cm}{3cm}{2.50cm}{.85cm}{1.85cm}
+%\RecipeWidths{\textwidth}{.20cm}{3cm}{4.50cm}{.85cm}{1.85cm}
+\RecipeWidths{3.4in}{.20cm}{3cm}{2.50cm}{.85cm}{1.85cm}
 
 \usepackage{picinpar}
 
@@ -42,71 +47,259 @@
 
 \begin{document}
 \maketitle
-
+\begin{center}
+{\Huge \Huge Hollow and Eldredge Families Merge!}
+\begin{figure}[ht!]
+\includegraphics[width=1\textwidth]{includes/headline.jpg}
+%\caption{A simple caption}
+\label{overflow}
+\end{figure}
+\end{center}
+%\bigskip
 \begin{multicols}{3}
-    \input{includes/lisa_eldredge_comuter.tex}
+    \input{includes/hollow_front_page.tex}
+    \columnbreak 
+    \input{includes/chelsea_hollow_editors_note.tex}
+    \closearticle
+    \input{includes/gilbert_eldredge_broken_arm.tex}
     \closearticle
     \input{includes/grace_hollow_disney_land.tex}
+    \closearticle
+    \input{includes/lisa_eldredge_band_uniform.tex}
+    \closearticle
+    \input{includes/eldredge_butter_baby.tex}
+    \closearticle
+    \input{includes/patty_hollow_senior_photograph.tex}
+\begin{comment}
+\headline{\Large Wild and Free}
 
-    %\closearticle
- 
+From a recent interview with Jordan Eldredge's parents:
 
+\begin{dialogue}
+\speak{Jorelsea Journal} So let’s get back to some camping stories.
+\speak{Lisa} Oh, yes! We had so many great times!
+\speak{Gilbert} How about when we camped on the plains in Kansas?
+\speak{Lisa} That was magical.
+\speak{Gilbert}  That was the first time the kids saw fireflies! They were
+enraptured by them. 
+\speak{J.J.}  How old were Nathaniel and Jordan?
+\speak{Gilbert}  13 and 16.
+\speak{Lisa}  When we arrived it was afternoon and we camped by a lake. There
+wasn’t anyone else there.
+\speak{Gilbert} Just that alone made it special. Just the 4 of us on the wide
+open plain. A large expanse of grass gently sloping down to the lake, some
+willows and the endless prairie sky…It was humid as all get-out by that lake!
+In hindsight that’s probably why no one else was there. It was off the beaten
+path for tourists and the locals knew to stay away in that weather!
+\speak{Lisa}  The sky was remarkable, overcast. I realized that the lighting
+was a perfect opportunity for getting some great camera shots. And for some
+inexplicable reason the boys didn’t go goofy on me that day when I got the
+camera out.
+\speak{J.J.} Oh, yea, young boys and cameras
+\speak{Gilbert}  Yes, it was like the atmosphere there had mesmerized them. You
+and I too.
+\speak{Lisa}  True. Like Gilbert said it was mid boggling how humid it was. But
+there was a stiff  breeze. The day was almost other wordly. 
+\speak{Gilbert}  Jordan was stripped down to his shorts. A quintiscential
+nature boy. 
+\speak{Lisa}  He was running all around on the grass, just relishing in the
+coolness and drama of the air and wind. Nathaniel was glowing and full of
+wonder. All of those shots of the boys are wonderful.  Just beautiful.
+Beautiful boys.
+\end{dialogue}
+
+\begin{window}[0,c,\includegraphics[width=2.25in]{includes/lisa_eldredge_kansas_camping.jpg},{ \centering Jordan relishing in the coolness}]
+\smallskip
+\end{window}
+    \closearticle
+\end{comment}
+    \closearticle
+    \input{includes/lisa_eldredge_comuter.tex}
+    \closearticle
+    \input{includes/messanger_column.tex}
     \columnbreak
-    \input{includes/lisa_eldredge_jumble.tex}
+    \input{includes/alex_kelly_reading.tex}
 \end{multicols}
-\pagebreak
 
+\closearticle
 \begin{multicols}{2}
+    \input{includes/susan_bono_fidelity.tex}
+    \columnbreak
     \input{includes/patty_hollow_tea_leaves.tex}
     \closearticle
     \input{includes/jordan_eldredge_die_rose.tex}
     \columnbreak
-    \input{includes/susan_bono_fidelity.tex}
     \input{includes/annette_watson_to_bodies.tex}
     \closearticle
-
-
-    \input{includes/chelsea_hollow_canon_168.tex}
-    \lilypondfile[line-width=3.4in,staffsize=15]{includes/chelsea_hollow_canon_168.ly}
-    \columnbreak
     \input{includes/jordan_eldredge_our_love.tex}
     \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_our_love.ly}
+
+    \columnbreak
+\byline{\Large ``Please Go Away And Let Me Sleep''}{Gilbert Eldredge}
+When Jordan was still sleeping in a crib, and would wake up at night, I would
+get up, get my guitar and go into his room and sing him back to sleep. My
+favorite song to sing to him at night was ``Please go 'way and let me sleep.''
+I kept hoping he would take the hint and tell me ``Please go 'way and let me
+sleep'' so I could go back to bed, but he never did. He must have liked to hear
+it.
+
+\settowidth{\versewidth}{'Larm clocks act on me just like a dose of chloroform,}
+\begin{verse}[\versewidth]
+I am twice as happy as a millionare,\\
+Ev'ry day I have such lovely dreams,\\
+When I'm sleepin' money never gives me a care,\\
+Trouble never troubles me it seems,\\
+I don't mind no summer heat or wintry storm,\\
+When I turn in bed I feel the spring,\\
+'Larm clocks act on me just like a dose of chloroform,\\
+When folks tries to wake me up I sings:\\
+\end{verse}
+
+\begin{center}
+\textit { \textbf {(Chorus)}}\\
+\end{center}
+\lilypondfile[line-width=3.4in,staffsize=15]{includes/gilbert_eldredge_please_go_away.ly}
+
+\begin{verse}[\versewidth]
+Ten o'clock this mornin' I was poundin' my ear,\\
+Dreamin' I'm the warmest man in town,\\
+Landlord hollered ``Wake up, quick, an' get out of here, \\
+Hurry up, the place is burning down!'' \\
+I got sore at bein' woke an' started to shout: \\
+``Stop that noise out there, for goodness sake, \\
+I can't watch no fire now, so you can put it out, \\
+Burn your blamed old house when I'm awake!''\\
+\end{verse}
+
+\begin{verse}[\versewidth]
+\begin{center}
+\textit { \textbf {Repeat Chorus}}\\
+\end{center}
+\end{verse}
+    \columnbreak
+    \input{includes/chelsea_hollow_canon_168.tex}
+    \lilypondfile[line-width=3.4in,staffsize=15]{includes/chelsea_hollow_canon_168.ly}
     \closearticle
     \input{includes/jordan_eldredge_nammies.tex}
     \lilypondfile[line-width=3.4in,staffsize=15]{includes/jordan_eldredge_nammies.ly}
     \columnbreak
-    \input{includes/quotes.tex}
-    \closearticle
-    \input{includes/alex_kelly_reading.tex}
-    \pagebreak
-
-    \input{includes/patty_hollow_senior_photograph.tex}
-    \closearticle
-    \input{includes/lisa_eldredge_band_uniform.tex}
-    \closearticle
-    \input{includes/jenna_hollow_valentine.tex}
-    \closearticle
     \input{includes/andree_young_photographs.tex}
-
     \pagebreak
     % Crossword puzzle
-    \input{includes/crossword_puzzle.tex}
-    \closearticle
-    \input{includes/lisa_eldredge_birth_announcement.tex}
-    \columnbreak
+    \byline{\Large Crossword}{Chelsea Hollow \& Jordan Eldredge}
     \begin{multicols}{2}
         \input{includes/crossword_clues.tex}
     \end{multicols}
-\end{multicols}
-\pagebreak
-
-
-
-\begin{multicols}{2}
+    \columnbreak
+    \input{includes/crossword_puzzle.tex}
+    \closearticle
+    \byline{\Large Logic Puzzlers}{Nathaniel Eldredge}
+    \begin{enumerate}
+        \item Jordan and Chelsea are each given a card to stick to their forehead; each card may be either red or black.  Each can see the other's card but not their own.  Without communicating in any way, they each have to write down a guess as to the color of their own card.  If at least one of them is right, they win a prize!  Is there a strategy that guarantees they will always win a prize?
+        \item Everyone at the wedding gets a card, assigned randomly by flipping a fair coin. We can see all the other cards but not our own, and must guess the color of our own card.  If at least half of us guess right, everyone wins a prize!  Is there a strategy that guarantees we will always win?  (Assume there are an even number of guests, so as not to have to deal with ``half'' of an odd number.)
+        \item Given the same setup as puzzler 1 is there a strategy Jordan and Chelsea can employ that will guarantee that they will \textit {both} guess correctly 50\% of the time?
+        \item Given the same setup as puzzler 2 is there a strategy that we can employ that will guarantee that we will \textit {all} guess correctly 50\% of the time?
+    \end{enumerate}
+    \pagebreak
+    \input{includes/lisa_eldredge_jumble.tex}
+    \columnbreak
+    \input{includes/young_cooley_word_seek.tex}
+    \closearticle
+    \bigskip
+    \begin{center}
+        {\Large Puzzle solutions on back page}
+    \end{center}
+    \bigskip
+    \closearticle
+    \input{includes/lisa_eldredge_birth_announcement.tex}
+    \pagebreak
+    \input{includes/jenna_hollow_valentine.tex}
+    \closearticle
     \input{includes/heather_watson_recipe.tex}
-    \input{includes/jorelsea_tikka_masala.tex}
+    \columnbreak
+    \input{includes/quotes.tex}
+    \closearticle
+    \begin{window}[0,c,\includegraphics[width=.5\textwidth]{includes/grace_comic.png},{\centering }]
+    \end{window}
+    \pagebreak
+    \begin{window}[0,c,\includegraphics[width=1\textwidth]{includes/funny_pages.png},{\centering }]
+    \end{window}
+    \pagebreak
+    \headline{\Large Crossword Solution}
+    \PuzzleSolution\input{includes/crossword_puzzle_block.tex}
+    \closearticle
+    \headline{\Large Logic Puzzler Solutions}
+    \begin{enumerate}
+        \item Jordan guesses the color he sees on Chelsea's forehead and Chelsea guesses the opposite of the color she sees on Jordan's forehead.
+        \item All the wedding guests agree to assume that there are an odd number of black cards (which will happen 50\% of the time). Based on the number of black cards they can see, each player deduces what the color of their card would have to be for their assumption to be correct. For example, if they observe an even number of black cards, they assume that their card must be black.
+        \item Both Jordan and Chelsea guess that their card is the same color as the card they see see on the other's head.
+        \item The wedding guests follow the same strategy as the solution for puzzle 2, except that half assume there are an odd number of black cards, and half assume there are an even number.
+    \end{enumerate}
+    \columnbreak
+    \headline{\Large Jumble Solution}
+    \begin{Puzzle}{7}{1}
+    |[][o]U|K|[][o]U|L|[][o]E|L|E|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{8}{1}
+    |[][o]B|A|R|[][o]I|T|O|N|E|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{10}{1}
+    |[][o]C|O|L|O|R|A|[][o]T|[][o]U|R|A|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{7}{1}
+    |O|L|Y|[][o]M|P|[][o]I|A|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{8}{1}
+    |P|[][o]A|P|A|G|E|N|O|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{2}{1}
+    |[][o]S|[][o]F|.
+    \end{Puzzle}
+    \bigskip
+
+    \begin{center}
+    \bf Jordan and Chelsea make:
+    \end{center}
+    \bigskip
+
+    \begin{Puzzle}{10}{1}
+    |[][o]B|[][o]E|[][o]A|[][o]U|[][o]T|[][o]I|[][o]F|[][o]U|[][o]L|.
+    \end{Puzzle}
+
+    \begin{Puzzle}{10}{1}
+    |[][o]M|[][o]U|[][o]S|[][o]I|[][o]C|.
+    \end{Puzzle}
+    \closearticle
+    \headline {\Large Seek-a-Word Solution}
+    \begin{spacing}{1.2}
+    \begin{alltt}
+          A W     E K A C E O          
+          E   E         N   C       R R
+      D   S     D     O     S       E I
+      O U L M     D H O T D I C E   T N
+      L K E   A   P I       C     H H G
+      L U H T   E     N   O N S T A G E
+    W   L C E L D R E D G E A C   P U J
+      O E   E   O   D       R R   P A O
+        L T     P R   F     F A M I L Y
+      C E L E B R A T I O N N B   N O G
+    N H     O     R R S   T A B   E V N
+    T A   U C H   I   T A   S L   S E I
+        D I S     A     Y C   E   S   C
+        S R   F     E C N A M O R     N
+      U     O   S         A R E P O   A
+    M         J   S D N E I R F     F D
+    \end{alltt}
+    \end{spacing}
+    \pagebreak
+    %\closearticle
+    %\input{includes/jorelsea_tikka_masala.tex}
 \end{multicols}
 
-\input{includes/chelsea_hollow_editors_note.tex}
 
 \end{document}

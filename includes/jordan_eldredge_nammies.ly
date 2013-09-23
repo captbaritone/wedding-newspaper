@@ -229,8 +229,8 @@ leadWords =\lyricmode {
   All the lit -- tle boys, and all the lit -- tle girls, 
     the're all go -- ing to their nam -- mies.
   All the birds and the bees and the flow -- ers and the trees,
-    the're all go -- ing too their nam -- mies. 
-  The're go -- ing, nam -- mies in their jam -- mies,
+    the're all go -- ing to their nam -- mies. 
+  They're go -- ing, nam -- mies in their jam -- mies,
     da da da da, duh da da da da, duh da da! da! da!
     da da da da da da da da da da da da da da da
 }

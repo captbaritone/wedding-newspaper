@@ -7,7 +7,7 @@ leadMusic = \relative c'' {
 
 }
 leadWords =\lyricmode {
-  Our love with last as long, as this song is -- n't.
+  Our love will last as long, as this song is -- n't.
 }
 
 \score {
